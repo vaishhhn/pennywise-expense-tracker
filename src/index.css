@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: #F9CDAD;
+    color: #452632;
+    overflow-x: hidden;
+  }
+  
+  h1, h2, h3, h4, h5, h6, .font-display {
+    font-family: 'Outfit', sans-serif;
+  }
+}
+
+/* Custom cute scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FAD4BD;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #A46583;
+  border-radius: 9999px;
+  border: 2px solid #FAD4BD;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #91204D;
+}
+
+/* Cute folder styling */
+.folder-paper {
+  background: #FFF8F3;
+  border: 2px solid #FAD4BD;
+  box-shadow: 0 10px 30px -5px rgba(69, 38, 50, 0.08), 0 4px 10px -2px rgba(69, 38, 50, 0.04);
+}
+
+.folder-tab-active {
+  background: #FFF8F3;
+  color: #91204D;
+  border-top: 3px solid #91204D;
+  border-left: 2px solid #FAD4BD;
+  border-right: 2px solid #FAD4BD;
+  border-bottom: 2px solid #FFF8F3;
+}
+
+.folder-tab-inactive {
+  background: #FAD4BD;
+  color: #75475E;
+  border: 2px solid #E8B690;
+  border-bottom: none;
+}
+
+.folder-tab-inactive:hover {
+  background: #FFE2E0;
+  color: #452632;
+}
+
+/* Cute Sticker Badges */
+.cute-badge {
+  box-shadow: 0 2px 0 rgba(69, 38, 50, 0.1);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.cute-badge:hover {
+  transform: translateY(-2px);
+}
